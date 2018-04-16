@@ -1,8 +1,8 @@
 def starts_with_a_vowel?(word)
-  if word.scan(/\b[aeiouAEIOU]/).length === 0
-     false
-   else
+  if word.scan(/\b[aeiouAEIOU]/)
      true
+   else
+     false
    end
 end
 
@@ -22,7 +22,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   end
 end
 
-def valid_phone_number?(number)
+def valid_phone_number?(phone)
   if number.match(/[()|\w"[\s]-]/)
     true
   else
