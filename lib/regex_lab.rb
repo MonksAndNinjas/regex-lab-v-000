@@ -23,8 +23,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone.each do |number|
-    if number.scan(/[\w]/).length === 10
+    if phone.scan(/[\w]/).length === 10
       true
     end
   end
